@@ -25,3 +25,19 @@ function addEntry(){
   <input id="${entryDropdown.value}-${entryNumber}-calories" type="number" placeholder="calories" min="0"/>
   `
 }
+function getCaloriesFromInputs(list)
+{
+  let calories=0;
+  for(const item of list){
+    const currVal=cleanInputString(item.value);
+    const cleanInputString(item.value);
+    if (invalidInputMatch) {
+  alert(`Invalid Input: ${invalidInputMatch[0]}`);
+  isError = true;
+  return null;
+}
+  calories += Number(currVal);
+}
+  return calories;
+}
+addEntryButton.addEventListener("click", addEntry);
