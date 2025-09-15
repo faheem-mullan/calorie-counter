@@ -25,6 +25,12 @@ function addEntry(){
   <input id="${entryDropdown.value}-${entryNumber}-calories" type="number" placeholder="calories" min="0"/>
   `
 }
+function calculateCalories(e){
+  e.preventDefault();
+  isError=false;
+}
+
+}
 function getCaloriesFromInputs(list)
 {
   let calories=0;
